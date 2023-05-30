@@ -6,7 +6,7 @@ import { router } from '../routes/usuarios.routes.js';
 class Server{
     constructor(){
         this.app=express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.usuariosPath='/api/usuarios';
         //Middlewares
         this.middlewares();
